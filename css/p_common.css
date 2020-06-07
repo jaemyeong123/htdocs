@@ -1,0 +1,181 @@
+/*
+ *  MEMO : 프로젝트 내부 공통 스타일 파일입니다.
+ * 작성자 : 민지
+ * 작성일 : 2020/02/25.
+*/
+@charset "utf-8";
+
+@font-face {
+  font-family: 'NotoSansKR-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NotoSansKR-Regular'),
+       local('NotoSansKR-Regular'),
+       url(../fonts/NotoSansKR-Regular.woff2) format('woff2'),
+       url(../fonts/NotoSansKR-Regular.woff) format('woff'),
+       url(../fonts/NotoSansKR-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'NotoSansKR-Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NotoSansKR-Bold'),
+       local('NotoSansKR-Bold'),
+       url(../fonts/NotoSansKR-Bold.woff2) format('woff2'),
+       url(../fonts/NotoSansKR-Bold.woff) format('woff'),
+       url(../fonts/NotoSansKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'SCDream4';
+  font-style: normal;
+  font-weight: 400;
+  src:local(※),
+      local('SCDream4'),
+      url(../fonts/SCDream4.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'SCDream5';
+  font-style: normal;
+  font-weight: 400;
+  src:local(※),
+      local('SCDream5'),
+      url(../fonts/SCDream5.woff) format('woff');
+}
+body,th,td,input,select,textarea,button, div, span, label {font-family:"NotoSansKR-Regular", '나눔고딕'; font-size:14px;  color:#333;}
+select{height:50px; -webkit-border-radius:4px; box-sizing:border-box;}
+
+
+
+/* 대표 wrap */
+.body{margin:50px 0 0 0;}
+.inner_wrap{padding: 0 20px}
+.gray_bg{background: #F9F9F9}
+.img_box{overflow: hidden; display: block;}
+.img_box > img{display: block; object-fit: cover; width: 100%; height: 100%;}
+
+/* 라인 */
+hr{width: 100%; height: 0; border: 0; border-bottom: 1px solid #eee; margin: 0;}
+hr.space_10{background: #F9F9F9; width: 100%; height: 10px; border-bottom: 0; margin: 0;}
+
+/* 폰트 */
+.normal_bold{font-family: 'NotoSansKR-Bold';}
+.point_bold{font-family: 'SCDream4';}
+.point_bold_5{font-family: 'SCDream5';}
+.palenthesis{font-size: 12px; color: #999; font-style: normal; font-weight: normal;}
+.pointer{color: #FF4A4A;}
+i.palenthesis{font-size: 12px; color: #999; font-style: normal; font-weight: normal;}
+.text_overflow{width:100%; overflow: hidden;text-overflow: ellipsis; white-space: nowrap;}
+
+/* button custom : s */
+
+.btn_float_full a{position: fixed; bottom:0; display: block; width: 100%; height:60px; line-height: 60px; text-align: center; font-size:16px; box-sizing: border-box;}
+/* only colors */
+.btn_point a{background: #FF4A4A; color: #fff;}
+.btn_point_line a{border: 1px solid #FF4A4A; background: #fff; color: #FF4A4A;}
+.btn_gray a{background: #eee; color: #666}
+.btn_dark_gray a{background: #999; color: #fff}
+.btn_gray_line a{border: 1px solid #ddd; color: #666}
+.btn_deactive a{background: #eee; color: #999}
+/* only shape */
+.float_top{width:100%; height:60px;overflow: hidden;}
+.btn_float_wrap{width:100%; position: fixed; bottom: 0; z-index: 7;}
+.btn_float a{float: left; width:50%; height:60px; line-height: 60px; text-align: center; font-size: 16px;box-sizing:border-box;}
+.btn_float a img{width:28px; vertical-align: middle; margin: -2px 3px 0 0;}
+.btn_full_weight a{border-radius: 50px; display: block; text-align: center; height: 50px; line-height:48px; box-sizing: border-box; font-size: 16px;}
+.btn_full_normal a{border-radius: 50px; display: block; text-align: center; height: 40px; line-height:38px; box-sizing: border-box; font-size: 14px;}
+.btn_full_thin a{border-radius: 50px; display: block; text-align: center; height: 34px; line-height:34px; box-sizing: border-box; font-size: 14px;}
+.btn_xs a{border-radius: 20px; display: block; text-align: center; width: 65px; height: 20px; line-height:20px; box-sizing: border-box; font-size: 12px;}
+.btn_s a{border-radius: 5px; display: block; text-align: center; width: 80px; height: 30px; line-height:30px; box-sizing: border-box; font-size: 14px;}
+.btn_m{border-radius: 50px;display: block; text-align: center; width: 50%; height: 50px; line-height:50px; box-sizing: border-box; font-size: 16px;}
+/* one complete */
+.btn_label a{display:inline-block; width: 40px; height: 20px; line-height: 20px; text-align: center; border: 1px solid #FF4A4A;  color: #FF4A4A;}
+.btn_more_view a{background: #fff; display: inline-block; width: 100%; height: 40px; border:1px solid #ddd; line-height: 40px; text-align: center; color:#666;border-radius: 5px;}
+/* button custom : e */
+
+/* input style */
+input{width: 100%; border: 0; height:50px; box-sizing: border-box; text-indent: 10px; border-radius: 4px;}
+input[type='text'],input[type='tel'],input[type='number'],input[type='password'],input[type='submit'],input[type='search'] {-webkit-appearance:none; -webkit-border-radius:4px;height:50px; box-sizing: border-box; border:1px solid #ddd;}
+input:checked[type='checkbox'] {background-color:#666; -webkit-appearance:checkbox} button,input[type='button'],input[type='submit'],input[type='reset'],input[type='file'] {-webkit-appearance:button; border-radius:0}
+input[type='search']::-webkit-search-cancel-button {-webkit-appearance:none}
+textarea{-webkit-appearance: none; border-radius: 0}
+textarea.textarea{border-radius: 4px; padding: 14px 12px; box-sizing: border-box;}
+
+input[type="checkbox"] {display:none;}
+input[type="checkbox"] + label {display:inline-block; margin-right:20px; color: #666; font-size: 14px; font-style: normal;}
+input[type="checkbox"] + label span {display:inline-block; width:15px; height:15px; margin:-3px 10px 0 0; vertical-align:middle; background:url('/images/check_off.png') right center no-repeat; cursor:pointer; background-size:13px;}
+input[type="checkbox"]:checked + label span {background:url('/images/check_on.png') right center no-repeat; background-size:13px;}
+
+input[type="radio"] {display:none;}
+input[type="radio"] + label {display:inline-block; margin-right: 40px; font-size:12px; color: #333; font-style: normal;}
+input[type="radio"] + label span {display:inline-block; width:13px; height:13px; margin:-3px 10px 0 0; vertical-align:middle; background:url('/images/btn_radio_off.png') right center no-repeat; cursor:pointer; background-size:13px;}
+input[type="radio"]:checked + label span {background:url('/images/radio_on.png') right center no-repeat; background-size:13px;}
+
+
+/* 아이디찾기, 비번찾기 결과텍스트 창 */
+.find_result{text-align: center; font-size: 16px; line-height: 26px; color: #333;}
+.find_result span{color: #FF4A4A;}
+
+/*------------------------- modals ----------------------*/
+/* 약관 관련 모달(3) */
+.modal_privacy_policy, .modal_terms, .modal_location_info{overflow: scroll;}
+.modal_terms .md_container, .modal_privacy_policy .md_container, .modal_location_info .md_container{line-height: 24px; padding: 20px; margin-top: 50px;}
+
+/* md style */
+.modal_full_page{overflow: scroll; height:100%; top:0; transform: none; left:0; background: #fff; display: none; box-sizing: border-box;}
+.modal_memo_mod, .modal_reserve_cancel, .modal_member_out{padding: 30px; box-sizing: border-box; border-radius: 20px;width:300px; height:280px; }
+.modal_memo_mod textarea, .modal_reserve_cancel textarea, .modal_member_out textarea{padding: 20px; margin-bottom:20px; margin-top:20px; width:100%; height:120px; border: none; background: #F6F6F6; color: #999; }
+.md_btn_wrap{width:100%; height:35px;}
+.md_btn_wrap span{display: inline-block; width:calc(50% - 5px); height:35px; line-height: 33px; text-align: center;}
+.md_btn_wrap span .btn_close{border-radius: 5px;width:100%; display: inline-block; color: #666; border: 1px solid #ccc}
+.md_btn_wrap span .btn_cancel{width:100%; border-radius: 5px; display: inline-block; color: #fff; border: 1px solid #FF2A5D;background: #FF2A5D;}
+.detail_business{padding: 20px 30px; box-sizing: border-box; margin-top: 50px;}
+
+.modal_swiper_full_img{overflow: hidden; height:100%; top:0; transform: none; left:0; background: #000; display: none; box-sizing: border-box;}
+.modal_swiper_full_img .center > div{position: absolute; top: 50%; right: 0; bottom: 0; left: 0; margin: auto; display: block; width: 100%; transform: translateY(-50%);}
+
+.modal_confirm{overflow:inherit; width:calc(100% - 80px); margin:0 auto; height: auto; border-radius: 10px 10px 0 0;}
+.modal_confirm .md_body{padding: 30px; box-sizing: border-box;}
+.modal_confirm .bottom{position: absolute;width: 100%;height: 45px; line-height: 44px;}
+.modal_confirm .bottom button{width: 50%; height: 100%; text-align: center; float: left;}
+.modal_confirm_complete{overflow:inherit; width:calc(100% - 80px); margin:0 auto; height: auto; border-radius: 10px 10px 0 0;}
+.modal_confirm_complete .md_body{padding: 30px; box-sizing: border-box;}
+.modal_confirm_complete .bottom{position: absolute;width: 100%;height: 45px; line-height: 44px;}
+.modal_confirm_complete .bottom button{width: 50%; height: 100%; text-align: center; float: left;}
+.bottom button.btn_deactive{color: #999; background: #eee;border-radius: 0px 0px 0px 10px;}
+.bottom button.btn_point{color: #fff; background: #FF4A4A;border-radius: 0px 0px 10px 0px;}
+
+.modal_confirm_hold{overflow:inherit; width:calc(100% - 80px); margin:0 auto; height: auto; border-radius: 10px 10px 0 0;}
+.modal_confirm_hold .md_body{padding: 30px; box-sizing: border-box;}
+.modal_confirm_hold .bottom{position: absolute;width: 100%;height: 45px; line-height: 44px; bottom:-44px;}
+.modal_confirm_hold .bottom button{width: 50%; height: 100%; text-align: center; float: left;}
+
+.modal_consult_review_img{overflow:inherit; width:100%; margin:0 auto; height: auto; ;}
+.modal_consult_review_img .md_img{width: 100%;}
+.modal_consult_review_img img{width:100%;display: block;}
+.modal_consult_review_img .md_overlay{background: #000; opacity: 1; visibility:visible;}
+.md_overlay_consult_review_img .md_close{position: absolute; top:0; right:0; padding: 15px;}
+.md_overlay_consult_review_img .md_close img{width: 15px;}
+
+/* 스위치 체크박스 */
+.switch {position:relative; display:inline-block; width:40px; height:24px;}
+.check_slider {position:absolute; cursor:pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #fff; -webkit-transition: .4s; transition: .4s; border-radius: 24px; border: 1px solid #757575;}
+.check_slider:before {position: absolute; content: ""; height: 22px; width: 22px; left:-1px; bottom:-1px; background-color: #fff; border: 1px solid #757575; -webkit-transition: .4s; transition: .4s; border-radius: 50%;}
+input:checked + .check_slider {background-color: #FF4A4A;border:1px solid #FF4A4A;}
+input:focus + .check_slider {box-shadow: 0 0 1px #FF4A4A; }
+input:checked + .check_slider:before {-webkit-transform: translateX(16px); -ms-transform: translateX(16px); transform: translateX(16px);border:1px solid #FF4A4A;}
+
+/* 별점 */
+.review_rating{width: 100%; height:40px; overflow: hidden; margin: 0 auto; }
+.rating {display: inline-block;}
+.rating > input {display: none; margin: 0 5px;}
+.rating > label:before {display: inline-block; content: "\f005"; background: url('/p_images/i_star_L.png') 0 0 no-repeat; width:40px; height:40px; color:rgba(0,0,0,0); background-size: 40px;}
+.rating > input[type="radio"] + label {color: #999; float: right; margin: 0 5px;}
+.rating > input:checked ~ label{content: "\f005"; display: inline-block; background: url('/p_images/i_star_red_L.png'); width:40px; height:40px; padding: 0; background-size: 40px; z-index: 5;}
+.rating > input:checked ~ label:before {background:none;}
+
+/* 즐겨찾기 */
+.wish_ico a{display:block; background:#fff url('/p_images/btn_wish_off.png') no-repeat; height:20px; width:22px; line-height:20px; float: right; background-size: 22px;}
+.wish_ico a.active{background: url('/p_images/btn_wish_on.png') no-repeat; color:#fff; background-size: 22px;}
