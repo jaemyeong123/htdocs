@@ -19,4 +19,8 @@ class Hamepage_v_1_0_0 extends CI_Controller {
 		$this->load->view('view_homepage_main');
 	}
 
+	public function homepage_corp_info(){
+		$this->load->view('view_homepage_corp_info');
+	}
+
 }
